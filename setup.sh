@@ -87,9 +87,6 @@ cp ./checkstyle-10.3.3-all.jar ~/scripts/checkstyle.jar
 wget https://raw.githubusercontent.com/Mr-Coxall/dot_files/main/mr-coxall_checks.xml
 cp ./mr-coxall_checks.xml ~/scripts/
 
-# then remove the dot_files firectory 
-sudo rm -R ~/dotfiles
-
 # create folders structure
 mkdir ~/ICS4U
 mkdir ~/ICS4U/Unit1
