@@ -23,9 +23,9 @@ git config --global pull.rebase true
 git config --global fetch.prune true
 
 # Setup GitHub SSH keys
+echo "---------------------"
+echo "Press RETURN 3 times."
 ssh-keygen -t ed25519 -C "ics4u.1.2022@mths.ca"
-echo""
-echo "Press RETURN 3 times"
 ssh-add ~/.ssh/id_ed25519
 echo ""
 cat ~/.ssh/id_ed25519.pub
