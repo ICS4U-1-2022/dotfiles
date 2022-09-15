@@ -23,6 +23,10 @@ git config --global pull.rebase true
 git config --global fetch.prune true
 
 # Setup GitHub SSH keys
+ssh-keygen -t ed25519 -C "ics4u.1.2022@mths.ca"
+ssh-add ~/.ssh/id_ed25519
+echo ""
+cat ~/.ssh/id_ed25519.pub
 echo "Please copy and paste the above key into your GitHub SSH Keys."
 echo "(at: https://github.com/settings/keys)"
 echo "Once done, press RETURN."
