@@ -1,7 +1,14 @@
 #!/bin/bash
 #
-# at the end, reboot for everything to take effect
-# sudo reboot now
+# On a new AWS Debian EC2 instance you will have to do the following before running this
+#
+# sudo apt update
+# sudo apt install -y git
+#
+# then ...
+#
+# git clone https://github.com/ICS4U-1-2022/dotfiles.git
+# sh ./dotfiles/setup.sh
 #
 # update and upgrade system
 echo Update and upgrade system
