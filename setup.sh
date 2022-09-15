@@ -44,6 +44,15 @@ ssh -T git@github.com
 echo Load programs
 sudo apt install tree
 
+# load NVim
+# load requirements
+sudo apt-get install ninja-build gettext libtool libtool-bin autoconf automake cmake g++ pkg-config unzip curl doxygen
+git clone https://github.com/neovim/neovim
+cd neovim && make CMAKE_BUILD_TYPE=RelWithDebInfo
+sudo make install
+# move back 1 directory
+cd ..
+
 # load .bashrc file
 echo Load .bashrc file
 > ~/.bashrc
