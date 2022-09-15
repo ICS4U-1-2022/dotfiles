@@ -90,6 +90,12 @@ cp ./mr-coxall_checks.xml ~/scripts/
 # then remove the dot_files firectory 
 sudo rm -R ~/dotfiles
 
+# create folders structure
+mkdir ~/ICS4U
+mkdir ~/ICS4U/Unit1
+mkdir ~/ICS4U/Unit1/Unit1-01
+# ...
+
 # reboot
 echo ---
 echo rebooting now ...
