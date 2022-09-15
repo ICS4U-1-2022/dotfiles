@@ -48,11 +48,14 @@ sudo apt install tree
 echo Load .bashrc file
 > ~/.bashrc
 cp ~/dotfiles/.bashrc ~/.bashrc
-source ~/.bashrc
 
 # Setup TypeScript
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
-source ~/.bashrc
+# the following is added tp .bashrc, but we need to run it here
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# now continue loading
 nvm install node --lst
 nvm install-latest-npm
 
