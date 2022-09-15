@@ -8,7 +8,7 @@
 # then ...
 #
 # git clone https://github.com/ICS4U-1-2022/dotfiles.git
-# sh ./dotfiles/setup.sh
+# cd ./dotfiles && sh ./setup.sh
 #
 # update and upgrade system
 echo Update and upgrade system
@@ -24,6 +24,8 @@ git config --global fetch.prune true
 
 # Setup GitHub SSH keys
 ssh-keygen -t ed25519 -C "ics4u.1.2022@mths.ca"
+echo""
+echo "Press RETURN 3 times"
 ssh-add ~/.ssh/id_ed25519
 echo ""
 cat ~/.ssh/id_ed25519.pub
@@ -45,7 +47,7 @@ sudo apt install tree
 # load .bashrc file
 echo Load .bashrc file
 > ~/.bashrc
-cp ./.bashrc ~/.bashrc
+cp ~/dotfiles/.bashrc ~/.bashrc
 source ~/.bashrc
 
 # Setup TypeScript
@@ -61,7 +63,7 @@ sudo apt install default-jdk -y
 # copy over shell script file
 echo Load shell script files
 mkdir ~/scripts
-cp ./java-lint.sh ~/scripts/java-lint.sh
+cp ~/dotfiles/java-lint.sh ~/scripts/java-lint.sh
 sudo chmod +x ~/scripts/java-lint.sh
 
 # loading checkstyle for java
@@ -70,10 +72,11 @@ sudo chmod +x ~/scripts/java-lint.sh
 echo load CheckStyle for Java
 wget https://github.com/checkstyle/checkstyle/releases/download/checkstyle-10.3.3/checkstyle-10.3.3-all.jar
 cp ./checkstyle-10.3.3-all.jar ~/scripts/checkstyle.jar
+wget https://raw.githubusercontent.com/Mr-Coxall/dot_files/main/mr-coxall_checks.xml
 cp ./mr-coxall_checks.xml ~/scripts/
 
 # then remove the dot_files firectory 
-sudo rm -R ~/dot_files
+sudo rm -R ~/dotfiles
 
 # reboot
 echo ---
