@@ -52,6 +52,8 @@ cd neovim && make CMAKE_BUILD_TYPE=RelWithDebInfo
 sudo make install
 # move back 1 directory
 cd ..
+# copy over NeoVim .config setup
+cp ~/dotfiles/.config ~/
 
 # load .bashrc file
 echo Load .bashrc file
@@ -86,16 +88,6 @@ wget https://github.com/checkstyle/checkstyle/releases/download/checkstyle-10.3.
 cp ./checkstyle-10.3.3-all.jar ~/scripts/checkstyle.jar
 wget https://raw.githubusercontent.com/Mr-Coxall/dot_files/main/mr-coxall_checks.xml
 cp ./mr-coxall_checks.xml ~/scripts/
-
-# install NeoVim
-echo Install NeoVim
-sudo apt-get install ninja-build gettext libtool libtool-bin autoconf automake cmake g++ pkg-config unzip curl doxygen
-git clone https://github.com/neovim/neovim
-cd neovim && make CMAKE_BUILD_TYPE=RelWithDebInfo
-sudo make install
-cd ..
-# copy over NeoVim .config setup
-
 
 # create folders structure
 mkdir ~/ICS4U
