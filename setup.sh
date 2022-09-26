@@ -53,7 +53,7 @@ sudo make install
 # move back 1 directory
 cd ..
 # copy over NeoVim .config setup
-cp ~/dotfiles/.config ~/
+cp -r ~/dotfiles/.config ~/
 
 # load .bashrc file
 echo Load .bashrc file
