@@ -1,4 +1,5 @@
 vim.opt.encoding = "utf-8"
+vim.opt.termguicolors = true
 
 vim.opt.number = true
 vim.opt.relativenumber = true
