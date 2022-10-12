@@ -12,3 +12,12 @@ require("nvim-lsp-installer").setup({
         }
     }
 })
+
+-- from: https://github.com/williamboman/nvim-lsp-installer/discussions/636
+local lspconfig = require("lspconfig")
+lspconfig.pyright.setup {}
+lspconfig.tsserver.setup{}
+lspconfig.eslint.setup {}
+lspconfig.jdtls.setup {}
+lspconfig.sumneko_lua.setup {}
+lspconfig.clangd.setup {}
