@@ -50,12 +50,9 @@ echo laod Java
 sudo apt install default-jdk -y
 
 # copy over shell script file
-echo Load shell script files
+echo copy over shell script files
 mkdir ~/scripts
-cp ~/scripts/checkstyle.jar ~/scripts/checkstyle.jar
-cp ~/scripts/mr-coxall_checks.xml ~/scripts/mr-coxall_checks.xml
-cp ~/scripts/main.yml ~/scripts/main.yml
-cp ~/scripts/repo.sh ~/scripts/repo.sh
+cp -r ~/scripts/ ~/scripts
 sudo chmod +x ~/scripts/repo.sh
 
 # loading checkstyle for java
