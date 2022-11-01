@@ -52,17 +52,17 @@ sudo apt install default-jdk -y
 # copy over shell script file
 echo copy over shell script files
 mkdir ~/scripts
-cp -r ~/scripts/ ~/scripts
+cp -r ~/dotfiles/scripts/ ~/scripts
 sudo chmod +x ~/scripts/repo.sh
 
 # loading checkstyle for java
 # https://github.com/checkstyle/checks
 # style/releases
-#echo load CheckStyle for Java
-#wget https://github.com/checkstyle/checkstyle/releases/download/checkstyle-10.3.3/checkstyle-10.3.3-all.jar
-#cp ./checkstyle-10.3.3-all.jar ~/scripts/checkstyle.jar
-#wget https://raw.githubusercontent.com/Mr-Coxall/dot_files/main/mr-coxall_checks.xml
-#cp ./mr-coxall_checks.xml ~/scripts/
+echo load CheckStyle for Java
+wget https://github.com/checkstyle/checkstyle/releases/download/checkstyle-10.3.3/checkstyle-10.3.3-all.jar
+cp ./checkstyle-10.3.3-all.jar ~/scripts/checkstyle.jar
+wget https://raw.githubusercontent.com/Mr-Coxall/dot_files/main/mr-coxall_checks.xml
+cp ./mr-coxall_checks.xml ~/scripts/
 
 # create folders structure
 mkdir ~/ICS4U
