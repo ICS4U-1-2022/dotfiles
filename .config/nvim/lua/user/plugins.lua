@@ -46,8 +46,8 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim" -- Useful lua functions used by lots of plugins
 
   -- Colorschemes
-  use "lunarvim/darkplus.nvim"
-  use 'folke/tokyonight.nvim'
+  -- https://github.com/projekt0n/github-nvim-theme#dark-colorblind-beta
+  use 'projekt0n/github-nvim-theme'
 
   -- status bar
   use 'feline-nvim/feline.nvim'

@@ -9,3 +9,7 @@ require "user.treesitter"
 require "user.autopairs"
 
 require('feline').setup()
+require("github-theme").setup({
+    theme_style = "dark_colorblind",
+    -- other config
+  })
